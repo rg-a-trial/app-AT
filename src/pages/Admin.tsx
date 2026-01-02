@@ -18,7 +18,11 @@ const Admin = () => {
   const [newScope, setNewScope] = useState("");
 
   const handleCopy = (text: string) => {
-    navigator.clipboard.writeText(text);
+    if (typeof window !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(text).catch((err) => {
+        console.error('Failed to copy text:', err);
+      });
+    }
   };
 
   const handleAddScope = () => {

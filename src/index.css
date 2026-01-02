@@ -119,9 +119,25 @@
     @apply border-border;
   }
 
+  html {
+    @apply bg-background;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--background));
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--background));
   }
 }
 
