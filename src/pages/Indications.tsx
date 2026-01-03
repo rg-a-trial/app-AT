@@ -16,6 +16,7 @@ import {
 import { Info, FileText, Download } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
+import { PERIODS } from "@/constants/pathologies";
 
 const allPathologies = [
   { id: "cancer-sein", label: "Cancer du sein", color: "hsl(195 66% 54%)" }, // Bleu clair

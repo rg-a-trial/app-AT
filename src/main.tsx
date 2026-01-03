@@ -9,15 +9,20 @@ if (!rootElement) {
 }
 
 try {
+  console.log("🚀 Starting React app...");
   const root = createRoot(rootElement);
   root.render(<App />);
+  console.log("✅ React app rendered successfully");
 } catch (error) {
-  console.error("Error rendering app:", error);
+  console.error("❌ Error rendering app:", error);
+  rootElement.style.backgroundColor = "#f6f1eb";
+  rootElement.style.color = "#144652";
+  rootElement.style.padding = "50px";
+  rootElement.style.fontFamily = "Arial, sans-serif";
   rootElement.innerHTML = `
-    <div style="padding: 20px; font-family: sans-serif;">
-      <h1>Erreur de chargement</h1>
-      <p>Une erreur s'est produite lors du chargement de l'application.</p>
-      <pre>${error instanceof Error ? error.message : String(error)}</pre>
-    </div>
+    <h1 style="color: red; font-size: 24px;">❌ Erreur de chargement</h1>
+    <p style="font-size: 16px; margin-top: 20px;">Une erreur s'est produite lors du chargement de l'application.</p>
+    <pre style="background: #f5f5f5; padding: 10px; border-radius: 4px; margin-top: 20px; overflow: auto;">${error instanceof Error ? error.message + "\n\n" + error.stack : String(error)}</pre>
+    <p style="margin-top: 20px;">Vérifiez la console du navigateur (F12) pour plus de détails.</p>
   `;
 }
