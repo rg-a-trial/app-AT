@@ -549,7 +549,7 @@ const Signaux = () => {
             <div className="bg-card rounded-lg border border-border p-6 shadow-sm">
               <div className="flex items-center gap-2 mb-4">
                 <h3 className="font-semibold text-lg text-foreground">
-                  Pathologie à la hausse
+                  Pathologies à la hausse
                 </h3>
                 <Tooltip>
                   <TooltipTrigger asChild>
