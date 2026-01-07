@@ -174,7 +174,7 @@ const Timing = () => {
       <div className="space-y-6">
         <PageHeader
           title="Recrutements"
-          description="Analyse détaillées des recrutements sur le territoire national"
+          description="Analyse détaillée des recrutements sur le territoire national"
           actions={
             <>
               <Button className="bg-blue-600 hover:bg-blue-700">
