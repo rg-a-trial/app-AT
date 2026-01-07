@@ -159,7 +159,7 @@ const Indications = () => {
   return (
     <DashboardLayout userRole="admin">
       <PageHeader 
-        title="Indications"
+        title="Pathologies"
         description="Analyse détaillée des indications médicales sur le territoire national"
         actions={
           <>
