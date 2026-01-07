@@ -29,7 +29,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 
 const navigationItems = [
   { title: "Vue d'ensemble", url: "/", icon: Home },
-  { title: "Indications", url: "/indications", icon: FileText },
+  { title: "Pathologies", url: "/indications", icon: FileText },
   { title: "Territoires", url: "/territoires", icon: MapPin },
   { title: "Centres & activation", url: "/centres", icon: Building2 },
   { title: "Recrutement", url: "/timing", icon: Clock },
