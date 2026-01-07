@@ -32,7 +32,7 @@ const navigationItems = [
   { title: "Pathologies", url: "/indications", icon: FileText },
   { title: "Territoires", url: "/territoires", icon: MapPin },
   { title: "Centres & activation", url: "/centres", icon: Building2 },
-  { title: "Recrutement", url: "/timing", icon: Clock },
+  { title: "Recrutements", url: "/timing", icon: Clock },
   { title: "Signaux concurrentiels", url: "/signaux", icon: TrendingUp },
 ];
 
