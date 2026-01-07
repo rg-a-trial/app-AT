@@ -173,7 +173,7 @@ const Timing = () => {
     <DashboardLayout userRole="admin">
       <div className="space-y-6">
         <PageHeader
-          title="Recrutement"
+          title="Recrutements"
           description="Analyse détaillées des recrutements sur le territoire national"
           actions={
             <>
