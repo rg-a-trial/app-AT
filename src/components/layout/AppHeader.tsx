@@ -16,8 +16,8 @@ interface AppHeaderProps {
   userName?: string;
 }
 
-export function AppHeader({ clientName = "Laboratoire Demo", userName = "Utilisateur" }: AppHeaderProps) {
-  const currentMonth = "janvier 2026";
+export function AppHeader({ clientName = "Version Bêta Partenaires", userName = "Utilisateur" }: AppHeaderProps) {
+  const currentMonth = "2026";
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
